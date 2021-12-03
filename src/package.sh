@@ -27,8 +27,8 @@ python3.9 --version
 cd ..
 
  # python3 python3-dev
-update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9.4 2
-update-alternatives --config python3
+# update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9.4 2
+# update-alternatives --config python3
 echo "Installing ttf-wqy-zenhei"
 apt-get install -y ttf-wqy-zenhei software-properties-common \
 

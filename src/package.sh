@@ -23,13 +23,13 @@ tar xzf Python-3.9.4.tgz
 cd Python-3.9.4 
 ./configure --enable-optimizations 
 make altinstall 
-python3.9.4 --version
+python3.9 --version
 cd ..
 
  # python3 python3-dev
-# update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 2
-# update-alternatives --config python3
-# echo "Installing ttf-wqy-zenhei"
+update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9.4 2
+update-alternatives --config python3
+echo "Installing ttf-wqy-zenhei"
 apt-get install -y ttf-wqy-zenhei software-properties-common \
 
 apt-get upgrade -y && apt-get install -y \

@@ -2,7 +2,7 @@
 
 ### every exit != 0 fails the script
 set -e
-python3 --version
+#python3 --version
 echo "Install Package - on  based ubuntu 20.04 LTS"
 DEBIAN_FRONTEND=noninteractive apt-get remove python3
 apt autoremove -y
@@ -14,7 +14,7 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         sudo \
         tini \
         software-properties-common  \
-        wget python3.9 python3.9-dev openssh-server locate nano 
+        wget python3 python3-dev openssh-server locate nano 
 # update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 2
 # update-alternatives --config python3
 # echo "Installing ttf-wqy-zenhei"

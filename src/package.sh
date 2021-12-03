@@ -2,6 +2,7 @@
 
 ### every exit != 0 fails the script
 set -e
+python3 --version
 echo "Install Package - on  based ubuntu 20.04 LTS"
 DEBIAN_FRONTEND=noninteractive apt-get remove python3
 apt autoremove -y

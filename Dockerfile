@@ -112,9 +112,19 @@ RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf
 RUN echo "nameserver 8.8.4.4" >> /etc/resolv.conf
 #RUN echo - "ControlPort 9051\nHashedControlPassword 16:A72E5A7AE45381ED60125365E2AA85E09B56ACAEE6B6536D8DF63A2B01\nCookieAuthentication 1\nRunAsDaemon 1" >> /etc/tor/torrc
 
-ENTRYPOINT [ "/usr/bin/tini", "--", "/dockerstartup/startup.sh" ]
+#ENTRYPOINT [ "/usr/bin/tini", "--", "/dockerstartup/startup.sh" ]
 
 #CMD ["/bin/bash", "/dockerstartup/startup.sh"]
+
+
+
+
+
+CMD ["/lib/systemd/systemd"]
+
+
+
+
 
 #RUN python --version
 #RUN python3.9 --version

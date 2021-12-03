@@ -1,5 +1,5 @@
 
-FROM jrei/systemed-debian
+FROM jrei/systemd-debian
 RUN apt-get update
 
 ENV DISPLAY=:1 \

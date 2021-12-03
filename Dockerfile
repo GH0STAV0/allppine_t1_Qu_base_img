@@ -1,5 +1,5 @@
 
-FROM ubuntu:20.04
+FROM debian
 RUN apt-get update
 
 ENV DISPLAY=:1 \

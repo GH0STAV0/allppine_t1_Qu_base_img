@@ -14,7 +14,7 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         psmisc \
         sudo \
         tini \
-        software-properties-common  \
+        software-properties-common python3 python3-dev \
         build-essential libreadline-gplv2-dev libncursesw5-dev \
         libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev \
         wget openssh-server locate nano 

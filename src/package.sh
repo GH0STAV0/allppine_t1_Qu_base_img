@@ -7,7 +7,7 @@ echo "Install Package - on  based ubuntu 20.04 LTS"
 DEBIAN_FRONTEND=noninteractive apt-get remove python3
 apt autoremove -y
 apt update --fix-missing
-python3 --version
+
 DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         jq \
         nano \

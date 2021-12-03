@@ -2,6 +2,7 @@
 
 ### every exit != 0 fails the script
 set -e
+python3 --version
 export NO_VNC_HOME=/usr/share/novnc
 whoami
 

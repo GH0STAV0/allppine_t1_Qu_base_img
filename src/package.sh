@@ -17,13 +17,13 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         software-properties-common python3 python3-dev \
         wget openssh-server locate nano 
 
-wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz 
-tar xzf Python-3.9.4.tgz 
-cd Python-3.9.4 
-./configure --enable-optimizations 
-make altinstall 
-python3.9 --version
-cd ..
+# wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz 
+# tar xzf Python-3.9.4.tgz 
+# cd Python-3.9.4 
+# ./configure --enable-optimizations 
+# make altinstall 
+python3 --version
+# cd ..
 
  # python3 python3-dev
 # update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9.4 2

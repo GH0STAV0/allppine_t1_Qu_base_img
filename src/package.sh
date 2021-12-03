@@ -14,7 +14,19 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         sudo \
         tini \
         software-properties-common  \
-        wget python3 python3-dev openssh-server locate nano 
+        build-essential libreadline-gplv2-dev libncursesw5-dev \
+        libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev \
+        wget openssh-server locate nano 
+
+wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz 
+tar xzf Python-3.9.4.tgz 
+cd Python-3.9.4 
+./configure --enable-optimizations 
+make altinstall 
+python3 --version
+cd ..
+
+ # python3 python3-dev
 # update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 2
 # update-alternatives --config python3
 # echo "Installing ttf-wqy-zenhei"

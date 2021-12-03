@@ -116,7 +116,7 @@ RUN echo "nameserver 8.8.4.4" >> /etc/resolv.conf
 
 #CMD ["/bin/bash", "/dockerstartup/startup.sh"]
 
-
+RUN /dockerstartup/startup.sh
 
 
 

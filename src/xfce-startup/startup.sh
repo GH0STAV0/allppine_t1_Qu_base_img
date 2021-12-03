@@ -46,4 +46,4 @@ git pull
 
 
 ###########################################
-/usr/bin/supervisord -n
+# /usr/bin/supervisord -n

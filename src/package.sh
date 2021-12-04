@@ -27,7 +27,7 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         sudo \
         tini \
         software-properties-common python3 python3-dev python3-numpy \
-        supervisor openvpn autocutsel  python3-pip python3.9-tk python3.9-dev  pwgen  \
+         openvpn autocutsel  python3-pip python3.9-tk python3.9-dev  pwgen  \
         wget openssh-server locate nano gedit screen  net-tools curl git tor
 
 
@@ -63,7 +63,7 @@ echo "Installing  xfce "
 apt-get install -y  task-xfce-desktop dbus-x11 xauth xinit x11-xserver-utils xdg-utils \
         xfce4 tightvncserver novnc websockify \
         build-essential \
-        xvfb 
+        xvfb supervisor
         #uuid-runtime
 
 

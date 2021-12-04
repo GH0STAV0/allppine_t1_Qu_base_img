@@ -68,7 +68,8 @@ RUN apt-get -f install  -y \
         build-essential \
         xvfb ttf-wqy-zenhei 
 
-
+RUN pip3 install selenium==4.0.0.a1 pymysql pyvirtualdisplay faker-e164 Faker PySocks stem  bs4   ConfigParser lxml  speechrecognition requests \
+ pyvirtualdisplay pydub pyautogui emojis emoji mysql-connector
 
 ################################## ADD FILES ##################################
 

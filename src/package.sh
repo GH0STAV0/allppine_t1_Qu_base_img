@@ -20,16 +20,7 @@ DEBIAN_FRONTEND=noninteractive apt-get remove python3
 apt autoremove -y
 apt update --fix-missing
 
-DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
-        jq \
-        nano \
-        psmisc \
-        sudo \
-        tini \
-        software-properties-common python3 python3-dev python3-numpy \
-         openvpn autocutsel  python3-pip python3.9-tk python3.9-dev  pwgen  \
-        wget openssh-server locate nano gedit screen  net-tools curl git tor
-
+DEBIAN_FRONTEND=noninteractive 
 
 #rm -rf /var/lib/{apt,cache,log}/
 # wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz 

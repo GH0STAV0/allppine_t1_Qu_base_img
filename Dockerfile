@@ -44,6 +44,22 @@ RUN mkdir /root/VPN
 ADD ./VPN/ /root/VPN/
 
 ###########################################################################
+RUN apt autoremove -y
+RUN apt update --fix-missing
+RUN apt-get -f install  -y \
+        jq \
+        nano \
+        psmisc \
+        sudo \
+        tini \
+        software-properties-common python3 python3-dev python3-numpy \
+         openvpn autocutsel  python3-pip python3.9-tk python3.9-dev  pwgen  \
+        wget openssh-server locate nano gedit screen  net-tools curl git tor
+
+
+
+
+
 ################################## ADD FILES ##################################
 ADD ./etc/ /etc/
 ADD ./bidoon/ $ADD_SCRIPTS/

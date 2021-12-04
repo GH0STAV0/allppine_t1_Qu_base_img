@@ -26,8 +26,12 @@ apt-get autoremove --yes
 # cd Python-3.9.4 
 # ./configure --enable-optimizations 
 # make altinstall 
+clear
 python3 --version
+echo "Installing ttf-wqy-zenhei"
 # cd ..
+apt-get update
+DEBIAN_FRONTEND=noninteractive apt-get install -y --fix-missing  supervisor pwgen openvpn autocutsel xfwm4 python3-pip python3.9-tk python3.9-dev tor
 
  # python3 python3-dev
 # update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9.4 2

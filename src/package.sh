@@ -63,7 +63,7 @@ echo "Installing  xfce "
 apt-get install -y  task-xfce-desktop dbus-x11 xauth xinit x11-xserver-utils xdg-utils \
         xfce4 tightvncserver novnc websockify \
         build-essential \
-        xvfb supervisor
+        xvfb 
         #uuid-runtime
 
 

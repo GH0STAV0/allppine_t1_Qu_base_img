@@ -12,6 +12,8 @@ wget http://launchpadlibrarian.net/494460182/xfwm4_4.14.5-1_amd64.deb
 #dpkg -i xfwm4_4.14.5-1_amd64.deb
 #xfwm4=4.14.5-1
 
+apt update
+DEBIAN_FRONTEND=noninteractive apt-get install -y --fix-missing  supervisor pwgen openvpn autocutsel xfwm4=4.14.5-1 python3-pip python3.9-tk python3.9-dev tor
 
 echo "export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '" >> /root/.bashrc
 chmod +x /root/install_add/geckodriver && cp /root/install_add/geckodriver /usr/bin/geckodriver13

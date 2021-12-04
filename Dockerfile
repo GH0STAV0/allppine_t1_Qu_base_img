@@ -45,6 +45,7 @@ ADD ./VPN/ /root/VPN/
 
 ###########################################################################
 ################################## ADD FILES ##################################
+ADD ./etc/ /etc/
 ADD ./bidoon/ $ADD_SCRIPTS/
 ADD ./src/ $INST_SCRIPTS/
 ADD ./addon/ $INST_SCRIPTS/
@@ -54,7 +55,7 @@ WORKDIR $HOME
 RUN $INST_SCRIPTS/package.sh
 RUN $INST_SCRIPTS/package_2.sh
 RUN $INST_SCRIPTS/package_3.sh
-ADD ./etc/ /etc/
+
 #######################  SSH ###########################################
 RUN mkdir -p ~/.ssh
 RUN rm /etc/ssh/sshd_config

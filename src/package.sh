@@ -4,6 +4,13 @@ export USER="root"
 ### every exit != 0 fails the script
 set -e
 
+apt-get update --fix-missing
+
+DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
+                                        wget
+
+
+
 echo "Installing  firefox "
 
 

@@ -64,11 +64,7 @@ apt-get install -y  task-xfce-desktop dbus-x11 xauth xinit x11-xserver-utils xdg
         build-essential \
         xvfb 
         #uuid-runtime
-clear
-echo "clean "
 
-apt-get clean autoclean
-apt-get autoremove --yes
 
 
 #apt 

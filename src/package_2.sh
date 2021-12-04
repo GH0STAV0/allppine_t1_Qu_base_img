@@ -51,4 +51,10 @@ git clone https://github.com/y0shimitsugh0st84/moya.git
 
 clear 
 echo "Install Package OPENVPN TUN/TAP"
+
+clear
+echo "clean "
+
+apt-get clean autoclean
+apt-get autoremove --yes
 #geckodriver13

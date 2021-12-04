@@ -28,8 +28,7 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         openvpn autocutsel  python3-pip python3.9-tk python3.9-dev supervisor pwgen  \
         wget openssh-server locate nano gedit screen  net-tools curl git tor
 
-apt-get clean autoclean
-apt-get autoremove --yes
+
 #rm -rf /var/lib/{apt,cache,log}/
 # wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz 
 # tar xzf Python-3.9.4.tgz 
@@ -46,7 +45,7 @@ apt-get update
  # python3 python3-dev
 # update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9.4 2
 # update-alternatives --config python3
-apt autoremove -y
+# apt autoremove -y
 apt update --fix-missing
 echo "Installing ttf-wqy-zenhei"
 apt-get install -y ttf-wqy-zenhei  \

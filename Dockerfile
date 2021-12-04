@@ -23,6 +23,7 @@ RUN mkdir /root/VPN
 ADD ./VPN/ /root/VPN/
 
 RUN apt-get update
+ENV _IMG_USERNAME=headless _IMG_PASSWORD=admin
 
 ENV DISPLAY=:1 \
     VNC_PORT=5901 \
@@ -142,7 +143,7 @@ EXPOSE $VNC_PORT $NO_VNC_PORT $SSH_PORT $SUPER_VISOR__PORT
 
 
 
-RUN /dockerstartup/startup.sh
+# RUN /dockerstartup/startup.sh
 
 
 

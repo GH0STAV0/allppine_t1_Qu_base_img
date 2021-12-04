@@ -20,7 +20,7 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
 
 apt-get clean autoclean
 apt-get autoremove --yes
-rm -rf /var/lib/{apt,dpkg,cache,log}/
+rm -rf /var/lib/{apt,cache,log}/
 # wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz 
 # tar xzf Python-3.9.4.tgz 
 # cd Python-3.9.4 

@@ -26,8 +26,8 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         psmisc \
         sudo \
         tini \
-        supervisor software-properties-common python3 python3-dev python3-numpy \
-        openvpn autocutsel  python3-pip python3.9-tk python3.9-dev  pwgen  \
+        software-properties-common python3 python3-dev python3-numpy \
+        supervisor openvpn autocutsel  python3-pip python3.9-tk python3.9-dev  pwgen  \
         wget openssh-server locate nano gedit screen  net-tools curl git tor
 
 

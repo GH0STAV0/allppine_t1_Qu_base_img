@@ -51,10 +51,11 @@ apt-get install -y  task-xfce-desktop dbus-x11 xauth xinit x11-xserver-utils xdg
         software-properties-common xfce4-terminal xvfb gedit screen 
         #uuid-runtime
 clear
-echo "Installing  dbus-x11 xauth xinit x11-xserver-utils xdg-utils"
+echo "clean "
 
 apt-get clean autoclean
 apt-get autoremove --yes
+#apt 
 #rm -rf /var/lib/{apt,dpkg,cache,log}/
 
 # echo "Installing  dbus-x11 xauth xinit x11-xserver-utils xdg-utils"

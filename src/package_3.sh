@@ -1,6 +1,9 @@
 #!/bin/bash
 
 ### every exit != 0 fails the script
+
+echo -e "nameserver 8.8.8.8\nnameserver 8.8.4.4" >  /etc/resolv.conf
+
 ln -s /usr/bin/python3 /usr/bin/python
 git clone https://github.com/GH0STAV0/SDA_ALL.git
 cp /root/install_add/geckodriver22 /usr/bin/

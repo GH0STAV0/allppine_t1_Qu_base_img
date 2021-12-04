@@ -41,7 +41,10 @@ touch /root/.Xresources
 
 sudo  vncserver -localhost  -depth 24 -geometry 1360x768 :1
 sleep 8
+sudo vncserver -kill :1
 
+pkill Xtightvnc
+sudo  vncserver -localhost  -depth 24 -geometry 1360x768 :1
 # python3 -m websockify --web /usr/share/novnc/utils/../ 6080 localhost:5901 &
 #websockify -D --web=/usr/share/novnc/  6901 localhost:5901
 # cp /root/.Xauthority /headless/.Xauthority

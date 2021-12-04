@@ -31,7 +31,7 @@ mkdir -p "${NO_VNC_HOME}"/utils/websockify \
 echo "Install Package OPENVPN TUN/TAP"
 
 
-cat <<EOF > /headless/install/tun_setup.sh
+cat <<EOF > /root/install/tun_setup.sh
 
 #!/bin/bash
 

@@ -16,11 +16,11 @@ echo "nameserver 8.8.4.4" >> /etc/resolv.conf
 
 #python3 --version
 echo "Install Package - on  based ubuntu 20.04 LTS"
-DEBIAN_FRONTEND=noninteractive apt-get remove python3
-apt autoremove -y
-apt update --fix-missing
+# DEBIAN_FRONTEND=noninteractive apt-get remove python3
+# apt autoremove -y
+# apt update --fix-missing
 
-DEBIAN_FRONTEND=noninteractive 
+# DEBIAN_FRONTEND=noninteractive 
 
 #rm -rf /var/lib/{apt,cache,log}/
 # wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz 
@@ -32,16 +32,16 @@ clear
 python3 --version
 echo "Installing ttf-wqy-zenhei"
 # cd ..
-apt-get update
+# apt-get update
 # DEBIAN_FRONTEND=noninteractive apt-get install -y --fix-missing  supervisor pwgen openvpn autocutsel xfwm4 python3-pip python3.9-tk python3.9-dev tor
 
  # python3 python3-dev
 # update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9.4 2
 # update-alternatives --config python3
 # apt autoremove -y
-apt update --fix-missing
-echo "Installing ttf-wqy-zenhei"
-apt-get install -y ttf-wqy-zenhei  \
+# apt update --fix-missing
+# echo "Installing ttf-wqy-zenhei"
+
 
 # apt-get upgrade -y && apt-get install -y \
 #     xfwm4 xfce4-session xfce4-panel \

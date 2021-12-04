@@ -64,7 +64,7 @@ RUN apt-get -f install  -y \
         task-xfce-desktop dbus-x11 xauth xinit x11-xserver-utils xdg-utils \
         xfce4 tightvncserver novnc websockify \
         build-essential \
-        xvfb 
+        xvfb ttf-wqy-zenhei 
 
 
 

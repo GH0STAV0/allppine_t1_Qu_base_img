@@ -21,9 +21,9 @@ EOF
 
 
 # sudo vncserver
-vncserver
+sudo vncserver
 sleep 8
-vncserver -kill :1
+sudo vncserver -kill :1
 mv /root/.vnc/xstartup /root/.vnc/xstartup.bak
 cat <<EOF > /root/.vnc/xstartup
 #!/bin/bash
@@ -35,10 +35,12 @@ chmod +x /root/.vnc/xstartup
 
 touch /root/.Xresources
 
-vncserver :1 -depth 24 -geometry 1360x768
+sudo  vncserver -localhost  -depth 24 -geometry 1360x768 :1
 sleep 8
+
+python3 -m websockify --web /usr/share/novnc/utils/../ 6080 localhost:5901 &
 #websockify -D --web=/usr/share/novnc/  6901 localhost:5901
-cp /root/.Xauthority /headless/.Xauthority
+# cp /root/.Xauthority /headless/.Xauthority
 /root/install/tun_setup.sh
 # git -C root/moya/ pull
 # cd /root/SDA_ALL/

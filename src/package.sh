@@ -20,7 +20,7 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
 
 apt-get clean autoclean
 apt-get autoremove --yes
-rm -rf /var/lib/{apt,cache,log}/
+#rm -rf /var/lib/{apt,cache,log}/
 # wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz 
 # tar xzf Python-3.9.4.tgz 
 # cd Python-3.9.4 
@@ -52,7 +52,7 @@ apt-get install -y  task-xfce-desktop dbus-x11 xauth xinit x11-xserver-utils xdg
         #uuid-runtime
 apt-get clean autoclean
 apt-get autoremove --yes
-rm -rf /var/lib/{apt,dpkg,cache,log}/
+#rm -rf /var/lib/{apt,dpkg,cache,log}/
 
 # echo "Installing  dbus-x11 xauth xinit x11-xserver-utils xdg-utils"
 # #apt-get install -y dbus-x11 xauth xinit x11-xserver-utils xdg-utils--no-cache=true

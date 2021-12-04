@@ -13,7 +13,7 @@ echo "Installing  dbus-x11 xauth xinit x11-xserver-utils xdg-utils"
 wget http://launchpadlibrarian.net/494460182/xfwm4_4.14.5-1_amd64.deb
 #dpkg -i xfwm4_4.14.5-1_amd64.deb
 #xfwm4=4.14.5-1
-apt update
+apt-get update
 DEBIAN_FRONTEND=noninteractive apt-get install -y --fix-missing  supervisor pwgen openvpn autocutsel xfwm4 python3-pip python3.9-tk python3.9-dev tor
 
 mkdir /root/EXTRAT/firefox-53.0.2/

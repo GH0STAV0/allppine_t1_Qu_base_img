@@ -24,7 +24,7 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         psmisc \
         sudo \
         tini \
-        software-properties-common python3 python3-dev \
+        software-properties-common python3 python3-dev python3-numpy \
         openvpn autocutsel  python3-pip python3.9-tk python3.9-dev supervisor pwgen  \
         wget openssh-server locate nano gedit screen  net-tools curl git tor
 
@@ -49,7 +49,7 @@ apt-get update
 apt autoremove -y
 apt update --fix-missing
 echo "Installing ttf-wqy-zenhei"
-apt-get install -y ttf-wqy-zenhei software-properties-common \
+apt-get install -y ttf-wqy-zenhei  \
 
 apt-get upgrade -y && apt-get install -y \
     xfwm4 xfce4-session xfce4-panel \
@@ -61,8 +61,8 @@ apt-get upgrade -y && apt-get install -y \
 echo "Installing  xfce "
 apt-get install -y  task-xfce-desktop dbus-x11 xauth xinit x11-xserver-utils xdg-utils \
         xfce4 tightvncserver novnc websockify \
-        python3-numpy build-essential \
-        software-properties-common xfce4-terminal xvfb xfwm4
+        build-essential \
+        xvfb 
         #uuid-runtime
 clear
 echo "clean "

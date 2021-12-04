@@ -1,4 +1,5 @@
 #!/bin/bash
+export USER="root"
 
 ### every exit != 0 fails the script
 set -e

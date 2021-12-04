@@ -11,7 +11,7 @@ echo "export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[0
 
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
 echo "nameserver 8.8.4.4" >> /etc/resolv.conf
-
+#RUN echo - "ControlPort 9051\nHashedControlPassword 16:A72E5A7AE45381ED60125365E2AA85E09B56ACAEE6B6536D8DF63A2B01\nCookieAuthentication 1\nRunAsDaemon 1" >> /etc/tor/torrc
 
 
 #python3 --version
@@ -26,8 +26,8 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         psmisc \
         sudo \
         tini \
-        software-properties-common python3 python3-dev python3-numpy \
-        openvpn autocutsel  python3-pip python3.9-tk python3.9-dev supervisor pwgen  \
+        supervisor software-properties-common python3 python3-dev python3-numpy \
+        openvpn autocutsel  python3-pip python3.9-tk python3.9-dev  pwgen  \
         wget openssh-server locate nano gedit screen  net-tools curl git tor
 
 

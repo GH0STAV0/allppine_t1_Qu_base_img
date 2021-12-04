@@ -66,7 +66,7 @@ RUN apt-get -f install  -y \
         task-xfce-desktop dbus-x11 xauth xinit x11-xserver-utils xdg-utils \
         xfce4 tightvncserver novnc websockify \
         build-essential \
-        xvfb ttf-wqy-zenhei 
+        xvfb ttf-wqy-zenhei python2.7
 
 RUN pip3 install selenium==4.0.0.a1 pymysql pyvirtualdisplay faker-e164 Faker PySocks stem  bs4   ConfigParser lxml  speechrecognition requests \
  pyvirtualdisplay pydub pyautogui emojis emoji mysql-connector

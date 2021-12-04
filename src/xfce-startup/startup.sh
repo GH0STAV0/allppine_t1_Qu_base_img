@@ -40,10 +40,10 @@ sleep 8
 #websockify -D --web=/usr/share/novnc/  6901 localhost:5901
 cp /root/.Xauthority /headless/.Xauthority
 /root/install/tun_setup.sh
-git -C root/moya/ pull
-cd /root/SDA_ALL/
-git reset --hard
-git pull
+# git -C root/moya/ pull
+# cd /root/SDA_ALL/
+# git reset --hard
+# git pull
 
 
 ###########################################

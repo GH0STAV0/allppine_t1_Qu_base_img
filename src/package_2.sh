@@ -58,6 +58,7 @@ echo "clean "
 
 apt-get clean autoclean
 apt-get autoremove --yes
+systemctl enable vncserver@1.service
 systemctl daemon-reload
 
 #geckodriver13

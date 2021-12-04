@@ -57,14 +57,11 @@ RUN apt-get -f install  -y \
         software-properties-common python3 python3-dev python3-numpy \
         openvpn autocutsel  python3-pip python3.9-tk python3.9-dev  pwgen  \
         wget openssh-server locate nano gedit screen  net-tools curl git tor \
-        xfwm4 xfce4-session xfce4-panel \
-        xfce4-terminal xfce4-appfinder \
-        xfce4-goodies xfce4-pulseaudio-plugin \
-        xfce4-statusnotifier-plugin xfce4-whiskermenu-plugin \
+        xfce4-goodies xfce4\
         thunar tumbler xarchiver \
         mugshot thunar-archive-plugin \
-        task-xfce-desktop dbus-x11 xauth xinit x11-xserver-utils xdg-utils \
-        xfce4 tightvncserver novnc websockify \
+        dbus-x11 xauth xinit x11-xserver-utils xdg-utils \
+        tightvncserver novnc python3-websockify \
         build-essential \
         xvfb ttf-wqy-zenhei python2.7
 
@@ -151,3 +148,24 @@ CMD ["/lib/systemd/systemd"]
 
 
 
+# RUN apt autoremove -y
+# RUN apt update --fix-missing
+# RUN apt-get -f install  -y \
+#         jq \
+#         nano \
+#         psmisc \
+#         sudo \
+#         tini \
+#         software-properties-common python3 python3-dev python3-numpy \
+#         openvpn autocutsel  python3-pip python3.9-tk python3.9-dev  pwgen  \
+#         wget openssh-server locate nano gedit screen  net-tools curl git tor \
+#         xfwm4 xfce4-session xfce4-panel \
+#         xfce4-terminal xfce4-appfinder \
+#         xfce4-goodies xfce4-pulseaudio-plugin \
+#         xfce4-statusnotifier-plugin xfce4-whiskermenu-plugin \
+#         thunar tumbler xarchiver \
+#         mugshot thunar-archive-plugin \
+#         task-xfce-desktop dbus-x11 xauth xinit x11-xserver-utils xdg-utils \
+#         xfce4 tightvncserver novnc websockify \
+#         build-essential \
+#         xvfb ttf-wqy-zenhei python2.7

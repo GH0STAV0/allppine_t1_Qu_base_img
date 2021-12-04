@@ -43,3 +43,9 @@ wget https://ftp.mozilla.org/pub/firefox/releases/53.0b9/linux-x86_64/en-US/fire
 clear
 df
 echo "Install bash color"
+
+apt-get clean autoclean
+apt-get autoremove --yes
+apt-get autoclean 
+apt-get autoremove --yes
+rm -rf /var/lib/apt/lists/*

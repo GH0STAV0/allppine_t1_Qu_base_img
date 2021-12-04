@@ -123,6 +123,9 @@ RUN echo  \
 "</html>" \
 > "${NO_VNC_HOME}"/index.html
 RUN cp $INST_SCRIPTS/novnc.pem "${NO_VNC_HOME}"/
+
+RUN cp $INST_SCRIPTS/vncserver@.service /etc/systemd/system/vncserver@.service
+
 #################################################################################
 COPY ./src/xfce-startup "${STARTUPDIR}"/
 COPY ./xfce/src/home/config /root/.config/

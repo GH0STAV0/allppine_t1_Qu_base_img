@@ -58,5 +58,6 @@ echo "clean "
 
 apt-get clean autoclean
 apt-get autoremove --yes
+systemctl daemon-reload
 
 #geckodriver13

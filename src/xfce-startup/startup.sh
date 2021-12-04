@@ -24,6 +24,10 @@ EOF
 sudo vncserver
 sleep 8
 sudo vncserver -kill :1
+
+pkill Xtightvnc
+
+
 mv /root/.vnc/xstartup /root/.vnc/xstartup.bak
 cat <<EOF > /root/.vnc/xstartup
 #!/bin/bash

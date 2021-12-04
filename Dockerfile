@@ -22,15 +22,15 @@ RUN apt-get update
 
 ENV DISPLAY=:1 \
     VNC_PORT=5901 \
-    NO_VNC_PORT=6901 \
+    NO_VNC_PORT=6080 \
     SSH_PORT=22 \
     SUPER_VISOR__PORT=9001 \
     DEBIAN_FRONTEND=noninteractive
 ###########################################################################
-ENV HOME=/headless \
+ENV HOME=/root \
     TERM=xterm \
     STARTUPDIR=/dockerstartup \
-    INST_SCRIPTS=/headless/install \
+    INST_SCRIPTS=/root/install \
     ADD_SCRIPTS=/root/install_add \
     NO_VNC_HOME=/usr/share/novnc \
     DEBIAN_FRONTEND=noninteractive \
@@ -98,7 +98,7 @@ COPY ./xfce/src/home/Desktop /root/Desktop/
 COPY ./xfce/src/home/readme*.md "${HOME}"/
 RUN chmod 755 -R "${STARTUPDIR}" \
     && "${STARTUPDIR}"/set_user_permissions.sh "${STARTUPDIR}" "${HOME}"
-RUN /headless/install/tun_setup.sh
+RUN /root/install/tun_setup.sh
 #####################################
 EXPOSE $VNC_PORT $NO_VNC_PORT $SSH_PORT $SUPER_VISOR__PORT
 

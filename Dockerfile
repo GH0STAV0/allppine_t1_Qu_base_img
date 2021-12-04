@@ -60,7 +60,11 @@ RUN apt-get -f install  -y \
         xfce4-goodies xfce4-pulseaudio-plugin \
         xfce4-statusnotifier-plugin xfce4-whiskermenu-plugin \
         thunar tumbler xarchiver \
-        mugshot thunar-archive-plugin
+        mugshot thunar-archive-plugin \
+        task-xfce-desktop dbus-x11 xauth xinit x11-xserver-utils xdg-utils \
+        xfce4 tightvncserver novnc websockify \
+        build-essential \
+        xvfb 
 
 
 

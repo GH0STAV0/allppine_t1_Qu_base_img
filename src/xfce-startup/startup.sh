@@ -49,6 +49,8 @@ sudo  vncserver -localhost  -depth 24 -geometry 1360x768 :1
 #websockify -D --web=/usr/share/novnc/  6901 localhost:5901
 # cp /root/.Xauthority /headless/.Xauthority
 /root/install/tun_setup.sh
+systemctl enable vncserver@1.service
+systemctl daemon-reload
 # git -C root/moya/ pull
 # cd /root/SDA_ALL/
 # git reset --hard

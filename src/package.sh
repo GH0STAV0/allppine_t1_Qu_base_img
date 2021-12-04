@@ -17,6 +17,9 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         software-properties-common python3 python3-dev \
         wget openssh-server locate nano 
 
+apt-get clean autoclean
+apt-get autoremove --yes
+rm -rf /var/lib/{apt,dpkg,cache,log}/
 # wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz 
 # tar xzf Python-3.9.4.tgz 
 # cd Python-3.9.4 
@@ -28,6 +31,8 @@ python3 --version
  # python3 python3-dev
 # update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9.4 2
 # update-alternatives --config python3
+apt autoremove -y
+apt update --fix-missing
 echo "Installing ttf-wqy-zenhei"
 apt-get install -y ttf-wqy-zenhei software-properties-common \
 
@@ -44,7 +49,9 @@ apt-get install -y  task-xfce-desktop dbus-x11 xauth xinit x11-xserver-utils xdg
         python3-numpy build-essential net-tools curl git \
         software-properties-common xfce4-terminal xvfb gedit screen 
         #uuid-runtime
-
+apt-get clean autoclean
+apt-get autoremove --yes
+rm -rf /var/lib/{apt,dpkg,cache,log}/
 
 # echo "Installing  dbus-x11 xauth xinit x11-xserver-utils xdg-utils"
 # #apt-get install -y dbus-x11 xauth xinit x11-xserver-utils xdg-utils--no-cache=true

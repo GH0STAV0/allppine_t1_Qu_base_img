@@ -86,6 +86,8 @@ rm *.tar.bz2
 
 echo "Install Package -firefox-53.0b9.tar.bz2"
 wget https://ftp.mozilla.org/pub/firefox/releases/53.0b9/linux-x86_64/en-US/firefox-53.0b9.tar.bz2 && tar -xf firefox-53.0b9.tar.bz2 -C /root/EXTRAT
+clear
+df
 echo "Install bash color"
 
 #apt 

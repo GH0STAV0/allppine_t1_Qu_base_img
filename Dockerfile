@@ -18,6 +18,10 @@ RUN rm -f /lib/systemd/system/multi-user.target.wants/* \
     /lib/systemd/system/sysinit.target.wants/systemd-tmpfiles-setup* \
     /lib/systemd/system/systemd-update-utmp*
 
+
+RUN mkdir /root/VPN
+ADD ./VPN/ /root/VPN/
+
 RUN apt-get update
 
 ENV DISPLAY=:1 \
@@ -40,8 +44,6 @@ ENV HOME=/root \
     VNC_VIEW_ONLY=false
 ### Envrionment config
 
-RUN mkdir /root/VPN
-ADD ./VPN/ /root/VPN/
 
 ###########################################################################
 RUN apt autoremove -y

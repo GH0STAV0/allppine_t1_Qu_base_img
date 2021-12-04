@@ -25,8 +25,8 @@ DEBIAN_FRONTEND=noninteractive apt-get -f install  -y \
         sudo \
         tini \
         software-properties-common python3 python3-dev \
-        supervisor pwgen openvpn autocutsel xfwm4 python3-pip python3.9-tk python3.9-dev tor \
-        wget openssh-server locate nano 
+        openvpn autocutsel  python3-pip python3.9-tk python3.9-dev supervisor pwgen  \
+        wget openssh-server locate nano gedit screen  net-tools curl git tor
 
 apt-get clean autoclean
 apt-get autoremove --yes
@@ -61,8 +61,8 @@ apt-get upgrade -y && apt-get install -y \
 echo "Installing  xfce "
 apt-get install -y  task-xfce-desktop dbus-x11 xauth xinit x11-xserver-utils xdg-utils \
         xfce4 tightvncserver novnc websockify \
-        python3-numpy build-essential net-tools curl git \
-        software-properties-common xfce4-terminal xvfb gedit screen 
+        python3-numpy build-essential \
+        software-properties-common xfce4-terminal xvfb xfwm4
         #uuid-runtime
 clear
 echo "clean "

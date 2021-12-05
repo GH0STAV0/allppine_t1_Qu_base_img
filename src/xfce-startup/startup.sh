@@ -55,9 +55,9 @@ systemctl enable vncserver@1.service
 systemctl daemon-reload
 systemctl start vncserver@1
 # git -C root/moya/ pull
-# cd /root/SDA_ALL/
-# git reset --hard
-# git pull
+cd /root/SDA_ALL/
+git reset --hard
+git pull
 
 
 ###########################################

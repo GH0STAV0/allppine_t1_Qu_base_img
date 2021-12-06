@@ -62,7 +62,7 @@ RUN apt-get -f install  -y \
         thunar tumbler xarchiver \
         mugshot thunar-archive-plugin \
         dbus-x11 xauth xinit x11-xserver-utils xdg-utils \
-        tightvncserver novnc python3-websockify \
+        tightvncserver novnc python3-websockify python3-pyvirtualdisplay \
         build-essential \
         xvfb ttf-wqy-zenhei python2.7
 

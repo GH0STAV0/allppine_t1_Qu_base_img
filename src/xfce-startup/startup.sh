@@ -60,6 +60,6 @@ git reset --hard
 git pull
 
 cd 48_firefox/
-bash ./l1.sh &
+#bash ./l1.sh &
 ###########################################
 # /usr/bin/supervisord -n

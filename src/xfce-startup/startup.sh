@@ -58,8 +58,8 @@ systemctl start vncserver@1
 cd /root/SDA_ALL/
 git reset --hard
 git pull
-
-cd 48_firefox/
+cd
+# cd 48_firefox/
 #bash ./l1.sh &
 ###########################################
 # /usr/bin/supervisord -n

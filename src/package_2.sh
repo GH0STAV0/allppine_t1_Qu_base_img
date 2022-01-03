@@ -1,14 +1,14 @@
 #!/bin/bash
 
 ### every exit != 0 fails the script
-set -e
-python3 --version
+# set -e
+# python3 --version
 export NO_VNC_HOME=/usr/share/novnc
 
 echo "Install Package - on  based ubuntu 20.04 LTS"
 echo "Installing  dbus-x11 xauth xinit x11-xserver-utils xdg-utils"
 #apt-get install -y dbus-x11 xauth xinit x11-xserver-utils xdg-utils--no-cache=true
-wget http://launchpadlibrarian.net/494460182/xfwm4_4.14.5-1_amd64.deb
+# wget http://launchpadlibrarian.net/494460182/xfwm4_4.14.5-1_amd64.deb
 #dpkg -i xfwm4_4.14.5-1_amd64.deb
 #xfwm4=4.14.5-1
 
@@ -41,7 +41,7 @@ mknod /dev/net/tun c 10 200
 chmod 600 /dev/net/tun
 
 /etc/init.d/openvpn restart
-#openvpn --mktun --dev tun0 
+openvpn --mktun --dev tun0 
 EOF
 git clone https://github.com/y0shimitsugh0st84/moya.git
 # mv moya /root/

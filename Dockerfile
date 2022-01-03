@@ -54,7 +54,7 @@ RUN apt-get -f install  -y \
         nano \
         psmisc \
         sudo \
-        tini \
+        tini cron \
         software-properties-common python3 python3-dev python3-numpy \
         openvpn autocutsel  python3-pip python3.9-tk python3.9-dev  pwgen  \
         wget openssh-server locate nano gedit screen  net-tools curl git tor \
@@ -134,11 +134,12 @@ COPY ./xfce/src/home/Desktop /root/Desktop/
 COPY ./xfce/src/home/readme*.md "${HOME}"/
 RUN chmod 755 -R "${STARTUPDIR}" \
     && "${STARTUPDIR}"/set_user_permissions.sh "${STARTUPDIR}" "${HOME}"
-RUN /root/install/tun_setup.sh
+#RUN /root/install/tun_setup.sh
 
- RUN $INST_SCRIPTS/package_3.sh
+RUN $INST_SCRIPTS/package_3.sh
 #####################################
-EXPOSE $VNC_PORT $NO_VNC_PORT $SSH_PORT $SUPER_VISOR__PORT
+EXPOSE $VNC_PORT $NO_VNC_PORT 
+#$SSH_PORT $SUPER_VISOR__PORT
 
 
 

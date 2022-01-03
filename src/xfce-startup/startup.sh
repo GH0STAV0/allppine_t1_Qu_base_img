@@ -39,27 +39,30 @@ chmod +x /root/.vnc/xstartup
 
 touch /root/.Xresources
 
-sudo  vncserver -localhost  -depth 24 -geometry 1360x768 :1
-sleep 8
-sudo vncserver -kill :1
 
-pkill Xtightvnc
-sudo  vncserver -localhost  -depth 24 -geometry 1360x768 :1
+# sudo  vncserver -localhost  -depth 24 -geometry 1360x768 :1
+# sleep 8
+# sudo vncserver -kill :1
+
+# pkill Xtightvnc
+# sudo  vncserver -localhost  -depth 24 -geometry 1360x768 :1
+
+
+
+
 # python3 -m websockify --web /usr/share/novnc/utils/../ 6080 localhost:5901 &
 #websockify -D --web=/usr/share/novnc/  6901 localhost:5901
 # cp /root/.Xauthority /headless/.Xauthority
-/root/install/tun_setup.sh
+# /root/install/tun_setup.sh
 echo "deaomndd"
 
 systemctl enable vncserver@1.service
+systemctl enable cron.service
 systemctl daemon-reload
 systemctl start vncserver@1
 # git -C root/moya/ pull
-cd /root/SDA_ALL/
-git reset --hard
-git pull
-cd
-# cd 48_firefox/
+
+#cd 48_firefox/
 #bash ./l1.sh &
 ###########################################
 # /usr/bin/supervisord -n

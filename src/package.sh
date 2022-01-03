@@ -9,8 +9,8 @@ set -e
 
 echo "export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '" >> /root/.bashrc
 
-echo "nameserver 8.8.8.8" > /etc/resolv.conf
-echo "nameserver 8.8.4.4" >> /etc/resolv.conf
+#echo "nameserver 8.8.8.8" > /etc/resolv.conf
+#echo "nameserver 8.8.4.4" >> /etc/resolv.conf
 #RUN echo - "ControlPort 9051\nHashedControlPassword 16:A72E5A7AE45381ED60125365E2AA85E09B56ACAEE6B6536D8DF63A2B01\nCookieAuthentication 1\nRunAsDaemon 1" >> /etc/tor/torrc
 
 

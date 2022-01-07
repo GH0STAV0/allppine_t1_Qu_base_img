@@ -136,6 +136,25 @@ RUN chmod 755 -R "${STARTUPDIR}" \
     && "${STARTUPDIR}"/set_user_permissions.sh "${STARTUPDIR}" "${HOME}"
 #RUN /root/install/tun_setup.sh
 
+RUN echo "Installing  firefox "
+RUN echo "Install Package -firefox-53.0b9.tar.bz2"
+
+RUN mkdir -p /root/EXTRAT/
+RUN mkdir /root/EXTRAT/firefox-49.0b9/
+RUN mkdir /root/EXTRAT/firefox-53.0.2/
+RUN mkdir /root/EXTRAT/firefox-53.0b9/
+RUN mkdir /root/EXTRAT/firefox-57.0.1/
+RUN mkdir /root/EXTRAT/firefox-58.0.1/
+RUN mkdir /root/EXTRAT/firefox-59.0.1/
+RUN mkdir /root/EXTRAT/firefox-60.0.1esr/
+RUN mkdir /root/EXTRAT/firefox-61.0.1/
+RUN mkdir /root/EXTRAT/firefox-63.0.1/
+
+
+
+
+
+
 RUN $INST_SCRIPTS/package_3.sh
 #####################################
 EXPOSE $VNC_PORT $NO_VNC_PORT 

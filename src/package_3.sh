@@ -6,6 +6,8 @@
 
 ln -s /usr/bin/python3 /usr/bin/python
 cp /root/install_add/geckodriver22 /usr/bin/
+cp /root/install_add/geckodriver-30 /usr/bin/
+
 export NO_VNC_HOME=/usr/share/novnc
 #rm /headless/*.bz2*
 
@@ -28,7 +30,9 @@ mkdir /root/EXTRAT/firefox-59.0.1/
 mkdir /root/EXTRAT/firefox-60.0.1esr/
 mkdir /root/EXTRAT/firefox-61.0.1/
 mkdir /root/EXTRAT/firefox-63.0.1/
+mkdir /root/EXTRAT/firefox-97.0.1/
 #https://ftp.mozilla.org/pub/firefox/releases/53.0.2/linux-x86_64-EME-free/en-GB/firefox-53.0.2.tar.bz2
+# https://ftp.mozilla.org/pub/firefox/releases/97.0.1/linux-x86_64/en-CA/firefox-97.0.1.tar.bz2
 
 echo "Install Package -firefox-53.0b9.tar.bz2"
 #https://ftp.mozilla.org/pub/firefox/releases/49.0b9/linux-x86_64/en-US/firefox-49.0b9.tar.bz2

@@ -66,6 +66,11 @@ RUN apt-get -f install  -y \
         build-essential \
         xvfb xserver-xephyr ttf-wqy-zenhei python2.7
 
+RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+RUN echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
+RUN apt-get update && apt-get install google-chrome-stable -y
+
+
 RUN pip3 install selenium==4.0.0.a1 pymysql pyvirtualdisplay faker-e164 Faker PySocks stem  bs4   ConfigParser lxml  speechrecognition requests \
  pyvirtualdisplay pydub pyautogui emojis emoji mysql-connector
 

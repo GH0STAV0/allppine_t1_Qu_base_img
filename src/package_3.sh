@@ -7,7 +7,7 @@
 ln -s /usr/bin/python3 /usr/bin/python
 cp /root/install_add/geckodriver22 /usr/bin/
 cp /root/install_add/geckodriver-30 /usr/bin/
-
+cp /root/install_add/chromedriver /usr/bin/
 export NO_VNC_HOME=/usr/share/novnc
 #rm /headless/*.bz2*
 

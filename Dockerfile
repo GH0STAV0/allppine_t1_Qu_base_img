@@ -72,7 +72,8 @@ RUN apt-get update && apt-get install google-chrome-stable -y
 
 
 RUN pip3 install selenium==4.0.0.a1 pymysql pyvirtualdisplay faker-e164 Faker PySocks stem  bs4   ConfigParser lxml  speechrecognition requests \
- pyvirtualdisplay pydub pyautogui emojis emoji mysql-connector
+ pyvirtualdisplay pydub pyautogui emojis emoji mysql-connector \
+ mysql-connector-python device_detector selenium-stealth
 
 ################################## ADD FILES ##################################
 

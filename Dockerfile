@@ -167,7 +167,7 @@ RUN wget -q https://ftp.mozilla.org/pub/firefox/releases/59.0.1/linux-x86_64/en-
 RUN wget -q https://ftp.mozilla.org/pub/firefox/releases/60.0.1esr/linux-x86_64/en-US/firefox-60.0.1esr.tar.bz2 && tar -xf firefox-60.0.1esr.tar.bz2 -C /root/EXTRAT/firefox-60.0.1esr/
 RUN wget -q https://ftp.mozilla.org/pub/firefox/releases/61.0.1/linux-x86_64/en-US/firefox-61.0.1.tar.bz2 && tar -xf firefox-61.0.1.tar.bz2 -C /root/EXTRAT/firefox-61.0.1/
 RUN wget -q https://ftp.mozilla.org/pub/firefox/releases/63.0.1/linux-x86_64/en-US/firefox-63.0.1.tar.bz2 && tar -xf firefox-63.0.1.tar.bz2 -C /root/EXTRAT/firefox-63.0.1/
-RUN wget -q https://ftp.mozilla.org/pub/firefox/releases/53.0b9/linux-x86_64/en-US/firefox-53.0b9.tar.bz2 && tar -xf firefox-53.0b9.tar.bz2 -C /root/EXTRAT
+RUN rm *.tar.bz2
 
 RUN wget -q https://ftp.mozilla.org/pub/firefox/releases/97.0.1/linux-x86_64/en-US/firefox-97.0.1.tar.bz2 && tar -xf firefox-97.0.1.tar.bz2 -C /root/EXTRAT
 

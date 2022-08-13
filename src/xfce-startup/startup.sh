@@ -66,3 +66,4 @@ systemctl start vncserver@1
 #bash ./l1.sh &
 ###########################################
 # /usr/bin/supervisord -n
+apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

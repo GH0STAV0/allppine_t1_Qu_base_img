@@ -180,7 +180,8 @@ EXPOSE $VNC_PORT $NO_VNC_PORT
 
 
 
-
+RUN apt-get clean \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # RUN /dockerstartup/startup.sh
 

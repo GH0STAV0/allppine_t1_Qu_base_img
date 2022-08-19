@@ -31,6 +31,7 @@ ENV DISPLAY=:1 \
     SSH_PORT=22 \
     SUPER_VISOR__PORT=9001 \
     DEBIAN_FRONTEND=noninteractive
+    
 ###########################################################################
 ENV HOME=/root \
     TERM=xterm \

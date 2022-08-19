@@ -12,10 +12,16 @@ goog="/root/g00g"
 h00t="/root/h0t"
 
 def read_current_acc_goo():
-	with open(goog,'r') as file:
-		lines = file.readlines()
-		lines=lines[0].replace("\n","")
-	return lines
+	try:
+
+		with open(goog,'r') as file:
+			lines = file.readlines()
+			lines=lines[0].replace("\n","")
+		return lines
+	except Exception as e:
+		print("error")
+		lines ="Rorr"
+		return lines
 
 def read_current_hosty():
 	with open(h00t,'r') as file:
